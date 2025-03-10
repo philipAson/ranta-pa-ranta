@@ -22,6 +22,10 @@ And run:
     npm uninstall gh-pages
 in terminal.
 
+# DCF calculator
+
+    * As of 10/03/2025 A DCF-calculator component has been added to the project.
+
 # CMS implementations
 
     * Replace font API's in App.css to the ones that is used in your project.
