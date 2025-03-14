@@ -66,14 +66,18 @@ const CompoundCalculator = () => {
             />
             <YAxis
               padding={{ top: 11 }}
-              width={90}
+              width={55}
               tick={{ fill: "#ffffff" }}
               type={"number"}
-              tickFormatter={(value) =>
-                value < 999999
-                  ? Math.round(value / 1000).toLocaleString() + " TKR"
-                  : (value / 1000000).toFixed(2).toLocaleString() + " MKR"
-              }
+              tickFormatter={(value) => {
+                if (value > 9999999999) {
+                  return "";
+                } else if (value < 999999) {
+                  return Math.round(value / 1000).toLocaleString() + " TKR";
+                } else {
+                  return (value / 1000000).toFixed(2).toLocaleString() + " MKR";
+                }
+              }}
               tickMargin={10}
               fontFamily="bebas-neue-pro"
               fontWeight={400}

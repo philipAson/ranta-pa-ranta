@@ -17,7 +17,7 @@
   padding-right: 80px;
   background-color: #0e1833;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.3fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 1rem;
   margin-top: 2rem;
@@ -101,9 +101,10 @@
 
   .calc-graph {
     height: 160px;
-    width: 85%;
+    width: 100%;
     grid-row: 2;
     grid-column: 1 / span 2;
+    padding-right: 0px;
   }
 
   .calc-input {
